@@ -5,18 +5,33 @@
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body oncontextmenu="return false">
     <div class="loginBox">
       <img src="https://images.onlinelabels.com/images/clip-art/dagobert83/dagobert83_female_user_icon.png" class="user">
-      <h2>Log In Here </h2>
-      <form>
+      <h2>Log In Here</h2>
+      <form method="post">
         <p>Email</p>
-        <input type="text" name="" placeholder="Enter Email">
+        <input type="text" name="userid" placeholder="Enter Email">
         <p>Password</p>
-        <input type="password" name="" placeholder="••••••••••••">
-        <input type="submit" name="" placeholder="Sign In">
+        <input type="password" name="pswrd" placeholder="••••••••••••">
+        <input type="submit" onclick="check(this.form)">
         <a href="#">Forget Password</a>
       </form>
+      <script language="javascript">
+      function check(form)
+      {
+        if(form.userid.value == "rb" && form.pswrd.value == "123")
+        {
+          window.open('http://www.google.com');
+        }
+        else {
+          {
+            alert("The username and password you entered don't match");
+          }
+        }
+      }
+      </script>
     </div>
+
   </body>
 </html>
