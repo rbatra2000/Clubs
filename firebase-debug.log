@@ -1,0 +1,35 @@
+[debug] [2017-11-10T00:57:56.884Z] ----------------------------------------------------------------------
+[debug] [2017-11-10T00:57:56.886Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-11-10T00:57:56.886Z] CLI Version:   3.14.0
+[debug] [2017-11-10T00:57:56.886Z] Platform:      darwin
+[debug] [2017-11-10T00:57:56.886Z] Node Version:  v6.11.0
+[debug] [2017-11-10T00:57:56.886Z] Time:          Thu Nov 09 2017 16:57:56 GMT-0800 (PST)
+[debug] [2017-11-10T00:57:56.886Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-10T00:57:56.896Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-10T00:57:56.897Z] > authorizing via signed-in user
+[debug] [2017-11-10T00:57:56.898Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/clubs-f27b9  
+ Thu Nov 09 2017 16:57:56 GMT-0800 (PST)
+[debug] [2017-11-10T00:57:57.422Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-10T00:57:57.424Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/clubs-f27b9/tokens  
+ Thu Nov 09 2017 16:57:57 GMT-0800 (PST)
+[debug] [2017-11-10T00:57:57.834Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/iShadow'...
+[info] 
+[debug] [2017-11-10T00:57:57.838Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/clubs-f27b9  
+ Thu Nov 09 2017 16:57:57 GMT-0800 (PST)
+[debug] [2017-11-10T00:57:58.206Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-10T00:57:58.206Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/252057731762/clients/_:getWebAppConfig  
+ Thu Nov 09 2017 16:57:58 GMT-0800 (PST)
+[debug] [2017-11-10T00:57:58.535Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-10T00:57:58.551Z] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/serve/hosting.js:34:17)
+    at Server.g (events.js:292:16)
+    at emitNone (events.js:86:13)
+    at Server.emit (events.js:185:7)
+    at emitListeningNT (net.js:1284:10)
+    at _combinedTickCallback (internal/process/next_tick.js:77:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:128:9)
+[error] 
+[error] Error: An unexpected error has occurred.
