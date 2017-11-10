@@ -34,7 +34,7 @@ h2
   color: #efed40;
   text-align: center;
 }
-.loginBox p{
+.loginBox p {
   margin: 0;
   padding: 0;
   font-weight: bold;
@@ -64,9 +64,9 @@ h2
   border: none;
   outline: none;
   height: 40px;
-  color: #fff;
+  color: #262626;
   font-size: 16px;
-  background: #ff267e;
+  background: #fff;
   cursor: pointer;
   border-radius: 20px;
   width: 100%;
@@ -75,7 +75,21 @@ h2
 .loginBox button[type="submit"]:hover
 {
   background: #efed40;
-  color: #262626;
+}
+
+.loginBox button[type="secondary"]
+{
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  width: 100%;
+}
+
+.loginBox button[type="secondary"]:hover
+{
+  color: #efed40;
 }
 
 .loginBox a

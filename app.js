@@ -34,7 +34,7 @@
     const pass = txtPassword.value;
     const auth = firebase.auth();
     //Sign in
-    const promise = auth.signInWithEmailAndPassword(email, pass);
+    const promise = auth.createUserWithEmailAndPassword(email, pass);
     promise.catch(e => console.log(e.message));
   });
 
@@ -46,5 +46,16 @@
       console.log('not logged in');
     }
   })
+
+  document.getElementById("password")
+  .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+      document.getElementById("submit").click();
+    }
+  });
+
+  // Get a reference to the database service
+ var database = firebase.database();
 
 }());
