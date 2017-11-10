@@ -59,7 +59,7 @@ h2
 {
   color: rgba(255,255,255,.5);
 }
-.loginBox input[type="submit"]
+.loginBox button[type="submit"]
 {
   border: none;
   outline: none;
@@ -69,9 +69,10 @@ h2
   background: #ff267e;
   cursor: pointer;
   border-radius: 20px;
+  width: 100%;
 }
 
-.loginBox input[type="submit"]:hover
+.loginBox button[type="submit"]:hover
 {
   background: #efed40;
   color: #262626;
